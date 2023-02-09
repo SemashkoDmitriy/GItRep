@@ -13,16 +13,16 @@ driver = webdriver.Chrome()
 time.sleep(1)
 
 # Метод get сообщает браузеру, что нужно открыть сайт по указанной ссылке
-driver.get("https://suninjuly.github.io/text_input_task.html")
+driver.get("https://www.dns-shop.ru/")
 time.sleep(1)
 
 # Метод find_element позволяет найти нужный элемент на сайте, указав путь к нему. Способы поиска элементов мы обсудим позже
 # Метод принимает в качестве аргументов способ поиска и значение, по которому мы будем искать
 # Ищем поле для ввода текста
-textarea = driver.find_element(By.CSS_SELECTOR, ".textarea")
+textarea = driver.find_element(By.CSS_SELECTOR, ".presearch-mobile__input")
 
 # Напишем текст ответа в найденное поле
-textarea.send_keys("get()")
+textarea.send_keys("msi")
 time.sleep(1)
 
 # Найдем кнопку, которая отправляет введенное решение
